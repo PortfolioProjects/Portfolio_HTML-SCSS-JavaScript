@@ -21,6 +21,11 @@
     .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
+      font-size: 4rem;
+    }
+
+    .sm-heading {
+      display: none;
     }
   }
 
@@ -70,5 +75,12 @@
 @include mediaSm {
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  .boxes div {
+    font-size: 1.5rem;
+    border: 1px solid darken($primary-color, 6);
+    padding: 0.4rem 0.8rem;
+    margin-bottom: 0.5rem;
   }
 }

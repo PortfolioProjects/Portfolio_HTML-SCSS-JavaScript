@@ -210,6 +210,22 @@ main {
       border: 2px solid #eee;
       transition: all 0.5s ease-out; }
 
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px solid #dfdfdf;
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.8rem 1.5rem;
+      background: #cedeee; }
+
 .btn, .btn-dark {
   display: block;
   padding: 0.4rem 1rem;

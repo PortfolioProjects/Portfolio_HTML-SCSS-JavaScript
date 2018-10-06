@@ -11,7 +11,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -79,7 +79,7 @@
 
   // Branding Side
   &-branding {
-    background: $primary-color;
+    background: $secondary-color;
     transform: translate3d(-100%, 0, 0);
     @include easeOut;
 
@@ -94,7 +94,7 @@
       opacity: 1.0;
       background: url('../img/portrait.jpg');
       border-radius: 50%;
-      border: solid 3px $secondary-color;
+      border: 3px solid $secondary-color;
     }
   }
 
@@ -108,7 +108,8 @@
     }
 
     &.current>a {
-      color: $secondary-color;
+      color: $link-color;
+      text-shadow: 1px 1px #fff;
     }
   }
 
@@ -118,13 +119,14 @@
     font-size: 30px;
     text-transform: uppercase;
     padding: 1rem 0;
-    font-weight: 300;
-    color: #fff;
+    // font-weight: 300;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 
     &:hover {
-      color: $secondary-color;
+      color: $link-color;
+      text-shadow: 1px 1px #fff;
     }
   }
 }

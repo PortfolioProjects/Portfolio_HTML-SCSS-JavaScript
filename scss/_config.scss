@@ -1,8 +1,11 @@
-$primary-color: #444;
-$secondary-color: #ffccbc;
+$primary-color: #eee;
+$secondary-color: #2d5986;
+$link-color: #1572c9;
+//  #002b80;
+//  #253377;
 $show-home-image: true;
 $home-image: url('../img/web-bg.jpg');
-$background-opacity: 0.5;
+$background-opacity: 0.6;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
@@ -26,6 +29,17 @@ $background-opacity: 0.5;
         background: rgba($primary-color, $background-opacity);
       }
     }
+  }
+}
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #222;
+  }
+
+  @else {
+    @return #fff;
   }
 }
 

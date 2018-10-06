@@ -1,5 +1,6 @@
 @import 'config';
 @import 'menu';
+@import 'text';
 
 * {
   box-sizing: border-box;
@@ -112,6 +113,43 @@ main {
     padding: 0.6rem;
     border-bottom: 5px solid $secondary-color;
   }
+}
+
+// Work Projects
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+
+
+  img {
+    width: 100%;
+
+    &:hover {
+      opacity: 0.65;
+      border: 2px solid $primary-color;
+      @include easeOut;
+    }
+  }
+}
+
+// Button Styles
+.btn {
+  display: block;
+  padding: 0.4rem 1rem;
+  border: 0;
+  margin-bottom: 0.5rem;
+
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 6);
+  color: #222;
 }
 
 #main-footer {

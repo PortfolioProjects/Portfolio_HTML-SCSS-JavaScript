@@ -1,86 +1,86 @@
 // Widescreens
 @include mediaXl {
-  .projects {
-    grid-template-columns: repeat(4, 1fr);
-  }
+	.projects {
+		grid-template-columns: repeat(4, 1fr);
+	}
 }
 
 // Desctops & Laptops
 @include mediaLg {
-  .projects {
-    grid-template-columns: repeat(3, 1fr);
-  }
+	.projects {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 // Tablets & Small Laptops
 @include mediaMd {
-  main {
-    align-items: center;
-    text-align: center;
+	main {
+		align-items: center;
+		text-align: center;
 
-    .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem;
-      font-size: 4rem;
-    }
+		.lg-heading {
+			line-height: 1;
+			margin-bottom: 1rem;
+			font-size: 4rem;
+		}
 
-    .sm-heading {
-      display: none;
-    }
-  }
+		.sm-heading {
+			display: none;
+		}
+	}
 
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0;
-  }
+	ul.menu-nav,
+	div.menu-branding {
+		float: none;
+		width: 100%;
+		min-height: 0;
+	}
 
-  .menu-nav {
-    height: 60vh;
-    line-height: 1.2;
+	.menu-nav {
+		height: 60vh;
+		line-height: 1.2;
 
-    .nav-link {
-      font-size: 24px;
-    }
-  }
+		.nav-link {
+			font-size: 24px;
+		}
+	}
 
-  .menu-branding {
-    height: 40vh;
+	.menu-branding {
+		height: 40vh;
 
-    .portrait {
-      background: url('../img/portrait_small.jpg');
-      width: 150px;
-      height: 150px;
-    }
-  }
+		.portrait {
+			background: url('../img/portrait_small.jpg');
+			width: 150px;
+			height: 150px;
+		}
+	}
 
-  .about-info {
-    grid-template-areas:
-      'bioimage'
-      'bio'
-      'job1'
-      'job2'
-      'job3';
+	.about-info {
+		grid-template-areas:
+			'bioimage'
+			'bio'
+			'job1'
+			'job2'
+			'job3';
 
-    grid-template-columns: 1fr;
-  }
+		grid-template-columns: 1fr;
+	}
 
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
-  }
+	.projects {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 // Smartphones
 @include mediaSm {
-  .projects {
-    grid-template-columns: 1fr;
-  }
+	.projects {
+		grid-template-columns: 1fr;
+	}
 
-  .boxes div {
-    font-size: 1.5rem;
-    border: 1px solid darken($primary-color, 6);
-    padding: 0.4rem 0.8rem;
-    margin-bottom: 0.5rem;
-  }
+	.boxes div {
+		font-size: 1.5rem;
+		border: 1px solid darken($primary-color, 6);
+		padding: 0.4rem 0.8rem;
+		margin-bottom: 0.5rem;
+	}
 }

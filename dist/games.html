@@ -1,113 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <title>The Venue</title>
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+			integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/main.css" />
+		<title>GameLib</title>
+	</head>
 
-  <body id="bg-img">
-    <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-      </div>
+	<body id="bg-img">
+		<header>
+			<div class="menu-btn">
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+			</div>
 
-      <nav class="menu">
-        <div class="menu-branding">
-          <div class="portrait"></div>
-        </div>
-        <ul class="menu-nav">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">About Me</a>
-          </li>
-          <li class="nav-item">
+			<nav class="menu">
+				<div class="menu-branding">
+					<div class="portrait"></div>
+				</div>
+				<ul class="menu-nav">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="about.html" class="nav-link">About Me</a>
+					</li>
+					<li class="nav-item">
 						<a href="certificates.html" class="nav-link">Certificates</a>
 					</li>
-          <li class="nav-item current">
-            <a href="work.html" class="nav-link">My Work</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">How To Reach Me</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+					<li class="nav-item current">
+						<a href="work.html" class="nav-link">My Work</a>
+					</li>
+					<li class="nav-item">
+						<a href="contact.html" class="nav-link">How To Reach Me</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-    <main id="about">
-      <h1 class="project-h1">
-        Game Lib
-        <span class="text-secondary smaller">- React</span>
-      </h1>
-      <a href="work.html">&larr; Back</a>
+		<main id="about">
+			<h1 class="project-h1">
+				Game Lib
+				<span class="text-secondary smaller">React, Redux</span>
+			</h1>
+			<a href="work.html">&larr; Back</a>
 
-      <div class="about-info">
-        <img src="img/projects/games_view.png" alt="order" class="bio-image" />
+			<div class="about-info">
+				<img src="img/projects/games_view.png" alt="order" class="bio-image" />
 
-        <div class="bio">
-          <p>
-            An application informing the user about a venue (hall) and its future events.
-          </p>
-          <p>
-            TheVenue is created with React, back-end and database can be added
-            later.
-          </p>
-        </div>
+				<div class="bio">
+					<p>
+						An application informing the user about Upcoming, Popular and Newest
+						Games.
+					</p>
+					<p>
+						GameLib is created with React, uses games info from the API
+						https://api.rawg.io/api/games .
+					</p>
+				</div>
 
-        <div class="job job-1">
-          <h3>Libraries, Frameworks</h3>
-          <p>React - library for building user interfaces</p>
-          <h3>Other Used Libraries</h3>
-          <p>material-ui/core, material-ui/icons</p>
-          <p>react-reveal, react-scroll, react-slick</p>
-        </div>
-        <div class="job job-2">
-          <h3>General functionality</h3>
-          <dl>            
-            <dt>Featured Component - with Carousel and TimeUntil</dt>
-            <dt>Carousel:</dt>
-            <dd>used react-slick/Slider</i>
-            <dt>TimeUntil:</dt>
-            <dd>used react-reveal/Fade to animate time</i>
-            <dt>VenueNfo:</dt>
-            <dd>uses react-reveal/Zoom to zoom info elements</dd>
-          </dl>
-        </div>
-        <div class="job job-3">
-          <h3>General functionality</h3>
-          <dl>
-            <dt>Highlights - with Description and Discount</dt>
-            <dt>
-              Discount:
-            </dt>  
-            <dd>uses Fade, Slide from react-reveal</dd>
-            <dd>uses reusable component MyButton</dd>
-            <dt>
-              Pricing:
-            </dt>
-            <dd>uses react-reveal/Zoom and MyButton</dd>
-            <dt>
-              Location:
-            </dt> 
-            <dd>uses google maps iframe to show the location</dd>
-          </dl>
-        </div>
-      </div>
-    </main>
+				<div class="job job-1">
+					<h3>Libraries, Frameworks</h3>
+					<p>React - library for building user interfaces, Redux</p>
+					<h3>Other Used Libraries</h3>
+					<p>styled-components, framer-motion</p>
+					<p>redux-thunk, axios, dotenv</p>
+				</div>
+				<div class="job job-2">
+					<h3>General functionality</h3>
+					<p>Get games from the API with axios</p>
+					<p>Get current game date and format date</p>
+					<p>Sort 10 loaded games by date</p>
+				</div>
+				<div class="job job-3">
+					<h3>General functionality</h3>
+					<p>Manage app store with Redux, redux-thunk</p>
+					<p>Use styled-components, framer-motion for UI</p>
+					<p>Organize layout with CSS grid</p>
+				</div>
+			</div>
+		</main>
 
-    <footer id="main-footer">Copyright &copy; 2021</footer>
-    <script src="js/main.js"></script>
-  </body>
+		<footer id="main-footer">Copyright &copy; 2021</footer>
+		<script src="js/main.js"></script>
+	</body>
 </html>

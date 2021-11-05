@@ -118,8 +118,9 @@ main {
 // Work Projects
 .projects {
 	display: grid;
-	grid-gap: 0.7rem;
 	grid-template-columns: repeat(3, 1fr);
+	column-gap: 0.7rem;
+	row-gap: 1em;
 
 	img {
 		width: 100%;
